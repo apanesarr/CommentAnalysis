@@ -1,13 +1,17 @@
 # CommentAnaylsis
 Analyzes code to find the total number of multi line comments and single line comments.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## How Does It Work ? 
 
-This solution uses regex patterns instead of looping through each line in the file. You can try out one of the regex patterns here: https://regex101.com/r/XaIcIC/
+This solution uses regex patterns instead of looping through each line. You can try out one of the regex patterns here: https://regex101.com/r/XaIcIC/
+
+You can also view all the FSM diagrams on: https://drive.google.com/open?id=1x7be1wmcNn8PDAvUc2HWPSJZMeuE3foA
+
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Deployment
 
@@ -32,6 +36,16 @@ The following lists the assumptions made while creating this project.
 
 ```
 -> The file size is not larger then the onboard ram of the computer the program is running on
+
+-> Comments such as 
+
+'''
+Hello
+'''
+#World
+#!
+
+are counted as two seperate comment blocks rather then one whole block
 
 ```
 
